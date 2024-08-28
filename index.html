@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi primera WEB</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 300px;">
+    <!-- <table style="border: 1px solid black;"> -->
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Martillo</td>
+                <td>35.6</td>
+                <td>26/07/2022</td>
+            </tr>
+            <tr>
+                <td>Alicate</td>
+                <td>24.8</td>
+                <td>30/07/2023</td>
+            </tr>
+            <tr>
+                <td>Taladro</td>
+                <td>110.5</td>
+                <td>13/01/2024</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>Total: xxxx.x</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Lista no ordenada -->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!-- Lista ordenada -->
+    <ol start="3">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li value="10">Elemento 3</li>
+        <li>Elemento 4
+            <ol>
+                <!-- ctrl + espacio -->
+                <li style="list-style-type: lower-alpha;">sub elemento 4.1</li>
+                <li style="list-style-type: lower-alpha;">sub elemento 4.2</li>
+                <li style="list-style-type: lower-alpha;">sub elemento 4.3</li>
+                <li style="list-style-type: lower-alpha;">sub elemento 4.4</li>
+            </ol>
+        </li>
+    </ol>
+    <form action="/formulario" method="POST">
+        <!--
+            method="GET"
+            http://127.0.0.1:5500/formulario?nombre=Marlon&apellido=Ly&comentario=Comentarios
+            method="POST" //Envia los datos en la cabeceras
+            http://127.0.0.1:5500/formulario
+            Ojo que la url maxima es de 255 caracteres! preferible POST
+        -->
+        <label for="nombre">Nombre</label>
+        <input value="Nombre por defecto" "text" id="nombre" name="nombre" placeholder="Nombre" />
+        <!-- type="submit", "email", "password", "radio", "checkbox", "file" -->
+        <br>
+        <label for="apellido">Apellido</label>
+        <input value="Apellido por defecto" type="text" id="apellido" name="apellido" placeholder="Apellido" /><br>
+        <br>
+        <label for="comentario">Comentario</label>
+        <br>
+        <textarea id="comentario" name="comentario" placeholder="Ingrese comentario" cols="30" rows="10">Este es un valor por defecto</textarea>
+        <br>
+        <button type="button">Tipo botón</button> 
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+        <br><br>
+        <button type="button"><img src="/Terno.JPG" width="100"></button> 
+         <!-- 
+            <input type="submit" /> 
+            Envía la información del formulario a la ruta
+            especificada en ACTION usando el método indicado.
+        -->
+    </form>
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>Mi sexto heading</h6>
+    <hr>
+    <p>Mi primer párrafo</p>
+    <hr>
+    <p>
+        Mi segundo párrafo <br>
+        xxx <span style="color:blue"> esto es spam</span> <br>
+        salto de linea doble <br> <br>
+        salto de linea
+    </p>
+    <!-- este texto es un comentario
+    y puede tener varias líneas -->
+    <a href="https://www.google.com.pe">Ir a google.com.pe</a><br><br>
+    <!-- 
+        <a target="_blank" href="https://www.google.com.pe">Ir a google.com.pe</a>
+        Con target abrimos la pagina en una nueva pestaña.
+    -->  
+    <img src="/Primer dia 2024.jpg" width="200" />  
+    <!-- Mantiene la relación si uso solo un height=... -->
+</body>
+</html>
